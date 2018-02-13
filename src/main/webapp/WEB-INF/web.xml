@@ -15,7 +15,7 @@
         <servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
         <init-param>
             <param-name>javax.ws.rs.Application</param-name>
-            <param-value>io.swagger.sample.PetStoreApplication</param-value>
+            <param-value>io.weli.FooApplication</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
