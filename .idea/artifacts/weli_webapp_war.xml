@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="weli-webapp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="weli-webapp.war">
+      <element id="artifact" artifact-name="weli-webapp:war exploded" />
+    </root>
+  </artifact>
+</component>
