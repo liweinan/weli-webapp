@@ -8,6 +8,7 @@ public class FooApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet<Class<?>> set = new HashSet<Class<?>>();
+        set.add(FooResource.class);
         set.add(io.swagger.jaxrs.listing.ApiListingResource.class);
         set.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
         return set;
