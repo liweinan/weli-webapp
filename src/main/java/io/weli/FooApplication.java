@@ -12,15 +12,15 @@ public class FooApplication extends Application {
     public Set<Class<?>> getClasses() {
         HashSet<Class<?>> set = new HashSet<Class<?>>();
         set.add(FooResource.class);
-//        set.add(io.swagger.jaxrs.listing.ApiListingResource.class);
-//        set.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
+        set.add(io.swagger.jaxrs.listing.ApiListingResource.class);
+        set.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
         return set;
     }
 
     @Override
     public Set<Object> getSingletons() {
-        singletons.add(new io.swagger.jaxrs.listing.ApiListingResource());
-        singletons.add(new io.swagger.jaxrs.listing.SwaggerSerializers());
+//        singletons.add(new io.swagger.jaxrs.listing.ApiListingResource());
+//        singletons.add(new io.swagger.jaxrs.listing.SwaggerSerializers());
         return singletons;
     }
 }
