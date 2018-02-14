@@ -1,9 +1,11 @@
 package io.weli;
 
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
+@ApplicationPath("/api")
 public class FooApplication extends Application {
 
     HashSet<Object> singletons = new HashSet<Object>();
