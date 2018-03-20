@@ -41,13 +41,8 @@ public class MimeMultipartProviderResource {
     @Path("form/class")
     @Consumes("multipart/form-data")
     public void putMultipartForm(@MultipartForm Form form) {
-        System.out.println(form);
-
-//        Assert.assertNotNull(ERR_CUST_NULL, form.getBill());
-//        Assert.assertEquals(ERR_VALUE, "bill", form.getBill().getName());
-//
-//        Assert.assertNotNull(ERR_CUST_NULL, form.getMonica());
-//        Assert.assertEquals(ERR_VALUE, "monica", form.getMonica().getName());
+        System.out.println(form.getBill().getName());
+        System.out.println(form.getMonica().getName());
     }
 }
 
