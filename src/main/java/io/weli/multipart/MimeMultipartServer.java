@@ -1,13 +1,10 @@
-package io.weli.container;
+package io.weli.multipart;
 
-import io.weli.FooApplication;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
 
-public class UndertowContainer {
+public class MimeMultipartServer {
     public static void main(String[] args) throws Exception {
         UndertowJaxrsServer server = new UndertowJaxrsServer().start();
-        server.deploy(FooApplication.class);
-        server.start();
-
+        server.deploy(MimeMultipartApplication.class);
     }
 }
