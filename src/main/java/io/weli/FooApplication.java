@@ -1,5 +1,7 @@
 package io.weli;
 
+import io.weli.multipart.MimeMultipartProviderResource;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -16,6 +18,7 @@ public class FooApplication extends Application {
         set.add(FooResource.class);
         set.add(io.swagger.jaxrs.listing.ApiListingResource.class);
         set.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
+        set.add(MimeMultipartProviderResource.class);
         return set;
     }
 
