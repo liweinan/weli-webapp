@@ -10,6 +10,10 @@ public interface MimeMultipartProxyClient {
     @Path("form/class")
     @PUT
     @Consumes("multipart/form-data")
-    void putFormDataMap(
-            @MultipartForm MimeMultipartProviderResource.Form form);
+    void putFormDataMap(@MultipartForm MimeMultipartProviderResource.Form form);
+
+    @Path("form/class")
+    @PUT
+    @Consumes("multipart/form-data")
+    void putFormDataMapInJsonFormat(@MultipartForm JsonResource.Form form);
 }

@@ -14,6 +14,7 @@ public class MimeMultipartApplication extends Application {
     public Set<Class<?>> getClasses() {
         HashSet<Class<?>> set = new HashSet<Class<?>>();
         set.add(MimeMultipartProviderResource.class);
+        set.add(JsonResource.class);
         return set;
     }
 
