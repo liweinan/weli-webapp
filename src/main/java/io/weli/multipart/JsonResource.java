@@ -12,19 +12,19 @@ import javax.ws.rs.Path;
 public class JsonResource {
 
     public static class Form {
-        @FormParam("bill")
+        @FormParam("user")
         @PartType("application/json")
-        private JsonItem bill;
+        private User user;
 
         public Form() {
         }
 
-        public Form(final JsonItem bill) {
-            this.bill = bill;
+        public Form(final User user) {
+            this.user = user;
         }
 
-        public JsonItem getBill() {
-            return bill;
+        public User getUser() {
+            return user;
         }
 
     }
@@ -33,7 +33,7 @@ public class JsonResource {
     @Path("form/class")
     @Consumes("multipart/form-data")
     public void putMultipartForm(@MultipartForm Form form) {
-        System.out.println(form.getBill().getName());
+        System.out.println(form.getUser().getName());
     }
 
 }
